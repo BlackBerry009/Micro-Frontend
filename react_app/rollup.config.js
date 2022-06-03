@@ -2,7 +2,6 @@ import { builtinModules } from 'module';
 import babel from '@rollup/plugin-babel';
 import url from '@rollup/plugin-url';
 import alias from '@rollup/plugin-alias';
-import postcssUrl from 'postcss-url';
 import postcss from 'rollup-plugin-postcss';
 import { DEFAULT_EXTENSIONS } from '@babel/core';
 import resolve, { nodeResolve } from '@rollup/plugin-node-resolve';
@@ -17,7 +16,7 @@ const dirs = fs.readdirSync('src/modules');
 
 export default dirs.map((moduleName) => {
   return {
-    input: `src/modules/${moduleName}/index.tsx`,
+    input: `src/modules/${moduleName}/index.jsx`,
     output: [
       {
         file: `build/esm/${moduleName}.js`,
