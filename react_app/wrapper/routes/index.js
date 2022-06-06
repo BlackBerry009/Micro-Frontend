@@ -35,5 +35,3 @@ export const baseRoutes = [
 ]
   .concat(rawRoutes)
   .map((i) => new Route(i));
-
-console.log('bbb', baseRoutes);

@@ -1,16 +1,16 @@
 [
   {
-    "name": "页面一",
+    "name": "一级菜单 React-React 页面一",
     "path": "/pageOne",
     "componentName": "PageOne"
   },
   {
-    "name": "页面二",
+    "name": "一级菜单 React-React 页面二",
     "path": "/pageTwo",
     "componentName": "PageTwo"
   },
   {
-    "name": "页面三",
+    "name": "菜单React-React 页面三",
     "path": "/pageThree",
     "componentName": "PageThree"
   }
