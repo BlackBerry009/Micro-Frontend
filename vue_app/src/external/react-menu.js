@@ -3,8 +3,9 @@ import { constantRoutes } from '@/router';
 import Layout from '@/layout';
 import RemoteReactComponent from '@/views/react/react.vue';
 
-const BASEURL = 'localhost:5500/react_app/build';
-const ROUTE_JSON_URL = `http://${BASEURL}/routes.json`
+// const BASEURL = 'localhost:5500/react_app/build';
+const BASEURL = 'micro-frontend-ctl.pages.dev/routes.json';
+const ROUTE_JSON_URL = `https://${BASEURL}/routes.json`
 
 const addRoutePrefix = (str, children) => {
   return children.map((item) => {
@@ -51,7 +52,7 @@ const convertRewardPointRoutes = (rawList) => {
           route.path = path;
           route.name = title;
           route.component = RemoteReactComponent;
-          route.meta.js = `http://${BASEURL}/cjs/${componentName}.js`;
+          route.meta.js = `https://${BASEURL}/cjs/${componentName}.js`;
           route.meta.hideInMenu = hide;
           route.meta.noTag = hide;
         } else {
